@@ -9,10 +9,10 @@ RUN cd /tmp && \
   cd dotsocr && \
   pip install -e . && \
   python3 tools/download_model.py
-COPY gradio.py /tmp/dotsocr/demo/gradio.py
+COPY gradio.py /tmp/dotsocr/gradio.py
 WORKDIR /tmp/dotsocr
 
 USER root
 
 ENTRYPOINT []
-CMD ["python3", "demo/gradio.py"]
+CMD ["python3", "gradio.py"]
