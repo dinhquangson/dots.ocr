@@ -9,7 +9,7 @@ RUN cd /tmp && \
   cd dotsocr && \
   pip install -e . && \
   python3 tools/download_model.py
-COPY gradio.py /tmp/dotsocr/demo/gradio_.py
+COPY gradio.py /tmp/dotsocr/demo/gradio.py
 WORKDIR /tmp/dotsocr
 
 USER root
