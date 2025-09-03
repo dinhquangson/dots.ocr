@@ -15,4 +15,4 @@ WORKDIR /tmp/dotsocr
 USER root
 
 ENTRYPOINT []
-CMD ["python3", "demo/gradio_.py"]
+CMD ["python3", "demo/gradio.py"]
